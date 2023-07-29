@@ -1,0 +1,32 @@
+{
+  "name": "ysnows.maikenxi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dist": "node dist/main.js",
+    "lint": "eslint src",
+    "lint:fix": "npm run lint --fix",
+    "format": "prettier --write \"**/*.ts\"",
+    "format:check": "prettier --list-different \"**/*.ts\"",
+    "build": "node build.js",
+    "deploy": "npm run build &&  cp -r dist/* ~/Library/Application\\ Support/Enconvo/extension/ysnows.maikenxi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ysnows/ysnows.maikenxi.git"
+  },
+  "author": "ysnows",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ysnows/ysnows.maikenxi/issues"
+  },
+  "homepage": "https://github.com/ysnows/ysnows.maikenxi#readme",
+  "sideEffects": [
+    "*.js"
+  ],
+  "dependencies": {
+    "enconvo": "^1.5.5"
+  }
+}

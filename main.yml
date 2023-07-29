@@ -1,7 +1,7 @@
 name: 麦肯锡方法
-version: 0.0.1
+version: 0.0.2
 author: ysnows
-on: { }
+on: {}
 steps:
   - name: ''
     uses: prompt
@@ -10,19 +10,21 @@ steps:
         type: enum
         value: gpt-3.5-turbo
         sort: 0
-        messages: [ ]
+        messages: []
       Messages:
         type: messages
         value: ''
         sort: 2
         messages:
           - role: system
-            content: '你知道麦肯锡的快速了解行业方法吗？就是通过大量行业高频关键词来建立概念。现在我是一个对 {{text|contextText|copiedText}} 不了解的小白，请你给我整理出10个常用关键词，制作成Markdown表格，表头是：关键词（英文）、分类（中文）、介绍（限50字）、使用场景、参考外链。'
+            content: '你知道麦肯锡的快速了解行业方法吗？就是通过大量行业高频关键词来建立概念。现在我是一个对
+              {{text|contextText|copiedText}}
+              不了解的小白，请你给我整理出10个常用关键词，制作成Markdown表格，表头是：关键词（英文）、分类（中文）、介绍（限50字）、使用场景、参考外链。'
       Temperature:
         type: enum
         value: '1.0'
         sort: 1
-        messages: [ ]
+        messages: []
 extensionId: ysnows.maikenxi
 logo: ns:translate
 description: 麦肯锡快速了解行业方法
@@ -59,7 +61,7 @@ options:
         type: text
         title: Alias
         defaultValue: 'maikenxi'
-        menuValues: [ ]
+        menuValues: []
         desc: ''
         placeholderText: Add alias
         textWidth: 1.6e+2
@@ -68,9 +70,12 @@ options:
         type: hotkey
         title: Hotkey
         defaultValue: ''
-        menuValues: [ ]
+        menuValues: []
         desc: "This shortcut will open an ai conversation window from anywhere in the
-      system\n      . Make sure it is not conflicting with other global shortcuts."
+          system
+
+          \      . Make sure it is not conflicting with other global
+          shortcuts."
         placeholderText: Add a hotkey to global start
         textWidth: 1.6e+2
         disable: false
