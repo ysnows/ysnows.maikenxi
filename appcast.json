@@ -2,6 +2,12 @@
   "identifier": "ysnows.maikenxi",
   "versions": [
     {
+      "version": "0.0.2",
+      "desc": "Bump version to 0.0.2",
+      "url": "https://github.com/ysnows/ysnows.maikenxi/releases/download/v0.0.2/ysnows.maikenxi.enconvoplugin",
+      "minAppVersion": "1.1.8"
+    },
+    {
       "version": "0.0.1",
       "desc": "feat: 1. init",
       "url": "https://github.com/ysnows/ysnows.maikenxi/releases/download/v0.0.1/ysnows.maikenxi.enconvoplugin",
